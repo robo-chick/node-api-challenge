@@ -23,7 +23,7 @@ router.get("/projects/:id", (req, res) => {
     projects
         .get(req.params.id)
         .then((project) => {
-            res.status(200).jso(project)
+            res.status(200).json(project)
         })
             .catch((err) => {
                 console.log(err)

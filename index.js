@@ -9,9 +9,9 @@ const port = process.env.PORT || 4000
 
 server.use(express.json())
 
-server.use("/", welcomeRouter)
-server.use("/projects", projectsRouter)
-server.use("/actions", actionsRouter)
+server.use( welcomeRouter)
+server.use(projectsRouter)
+server.use(actionsRouter)
 
 server.listen(port, () => {
     console.log(`Server running at http://localhost:${port}`)

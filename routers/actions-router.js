@@ -90,9 +90,9 @@ router.put("/actions/:id", (req, res) => {
 // POST add action
 router.post("/actions/:id", (req, res) => {
     actions
-        .get()
+        .get(req.params.id)
         .then((action) => {
-            if (!req.body.project_id || req.body.description || req.body.completed) {
+            if (!req.body.project_id || !req.body.description || req.body.completed) {
                 res.status(400).json({
                     message: "Please fill out all fields",
                 })
