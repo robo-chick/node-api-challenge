@@ -1,0 +1,19 @@
+The core features of Node.js and Express and why they are useful.
+
+Node.js is a runtime environment used to execute JavaScript applications outside the browser. It allows easy sharing of code between client and server.
+
+Understand and explain the use of Middleware?
+
+Middleware is an array of functions that get executed in the order they are introduced into the server code. It provides a way to extend the features provided by Express, and provides an easy way to add modularity to our code. 
+
+The basic principles of the REST architectural style.
+
+REST is a client-server architecture  - it separates the UI concerns from the data storage concerns. It is stateless - meaning each request from client to server must contain all of the information necessary to understand the request, and cannot take advantage of any tored context on the server. It is cacheable, giving a client cache the right to reuse that response data for later requests. REST provides a uniform interface and is a layered system allowing an architecture to be composed of hierarchial layers by constraining component behavior so that each component cannot see beyond the immediate layer with which they are interacting. 
+
+Understand and explain the use of Express Routers.
+
+Using routing we can map incoming requests to the appropriate request handler based on the URL and HTTP method used. We can have a single URL per resource and execute different code based on the HTTP method/verb used. 
+
+Describe tooling used to manually test the correctness of an API.
+
+Tools like Insomnia and Postman allow us to manually test API's by making POST/PUT/PATCH/DELETE and GET requests.
