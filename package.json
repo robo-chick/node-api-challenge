@@ -6,8 +6,9 @@
     "scripts": {
         "db:seed": "knex seed:run",
         "server": "nodemon index.js",
-        "start": "nodemon index.js",
-        "watch": "nodemon --require dotenv/config index.js"
+        "watch": "nodemon --require dotenv/config index.js",
+        "start": "node index.js"
+ 
     },
     "repository": {
         "type": "git",
